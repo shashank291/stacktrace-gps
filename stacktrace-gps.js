@@ -22,7 +22,7 @@
     function _xdr(url) {
         return new Promise(function(resolve, reject) {
             var req = new XMLHttpRequest();
-            req.open('get', url);
+            req.open('get', url, true);
             req.onerror = reject;
             req.onreadystatechange = function onreadystatechange() {
                 if (req.readyState === 4) {
